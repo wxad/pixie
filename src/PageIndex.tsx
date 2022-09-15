@@ -14,7 +14,7 @@ function PageIndex() {
         <div className="relative flex items-center justify-between mx-auto px-48 max-w-1800 h-92">
           <a
             className="absolute right-48 top-1/2 -translate-y-1/2"
-            href="https://github.com/wxad/flow/blob/main/Flow.tsx"
+            href="https://github.com/wxad/pixie"
           >
             <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
               <path
@@ -143,17 +143,6 @@ function PageIndex() {
   { dom }
 </body>`}
             </SyntaxHighlighter>
-          </div>
-          <div className="text-gray-800">
-            在只有两个断点的情况下，
-            <span className="inline-block mr-4 py-2 px-4 font-medium bg-gray-200 rounded-4">
-              {"<Flow />"}
-            </span>
-            会直接以新的类名替换两个断点类名，因使用{" "}
-            <span className="inline-block mr-4 py-2 px-4 font-medium bg-gray-200 rounded-4">
-              clamp
-            </span>
-            就可以完成流动的效果。
           </div>
         </div>
       </div>
