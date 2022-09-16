@@ -1,13 +1,21 @@
 [
   {
+    "url": "https://wxa.wxs.qq.com/wxad-design/wxad/22-09-16-check/index.html#/cash",
+    "name": "官网-流量变现页",
+    "breakpoints": {
+      "375": "https://wxa.wxs.qq.com/wxad-design/yijie/bianxian-375.png",
+      "1440": "http://wxa.wxs.qq.com/wxad-design/yijie/bianxian-1440.png"
+    }
+  },
+  {
     "url": "https://wxa.wxs.qq.com/wxad-design/wxad/22-09-13/index.html#/best-moments",
-    "name": "官网榜单页",
-    "breakpoints": [
-      375,
-      1024,
-      1200,
-      1440,
-      1920
-    ]
+    "name": "官网-榜单页",
+    "breakpoints": {
+      "375": "https://wxa.wxs.qq.com/wxad-design/yijie/case-test-3755.png",
+      "1024": "https://wxa.wxs.qq.com/wxad-design/yijie/case-test-1024.png",
+      "1200": "https://wxa.wxs.qq.com/wxad-design/yijie/case-test-1200.png",
+      "1440": "https://wxa.wxs.qq.com/wxad-design/yijie/case-test-1440.jpg",
+      "1920": "https://wxa.wxs.qq.com/wxad-design/yijie/case-test-19200.png"
+    }
   }
 ]

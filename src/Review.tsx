@@ -148,7 +148,7 @@ function Review() {
           id="content"
           name="content"
           frameBorder="0"
-          src="https://wxa.wxs.qq.com/wxad-design/wxad/22-09-13/index.html#/best-moments"
+          src={url}
           className="relative w-full h-full border-none bg-white z-10"
         />
         {currentWidth !== window.innerWidth && (

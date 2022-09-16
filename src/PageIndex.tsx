@@ -56,6 +56,7 @@ function PageIndex() {
             走查列表
           </div>
           <Table
+            verticalAlign="center"
             dataSource={dataSource}
             columns={[
               {
@@ -69,10 +70,26 @@ function PageIndex() {
                 title: "项目名称",
               },
               {
+                dataIndex: "design",
+                title: "设计预览",
+                render: ({ breakpoints }) => (
+                  <div
+                    className="w-70 h-140"
+                    style={{
+                      background: `url(${
+                        // @ts-ignore
+                        breakpoints[Object.keys(breakpoints)[0]]
+                      }) 0 0 / 70px auto`,
+                    }}
+                  />
+                ),
+              },
+              {
                 dataIndex: "breakpoints",
                 title: "项目断点",
                 grow: true,
-                render: ({ breakpoints }) => breakpoints.join(", "),
+                render: ({ breakpoints }) =>
+                  Object.keys(breakpoints).join(", "),
               },
               {
                 dataIndex: "url",
@@ -84,9 +101,9 @@ function PageIndex() {
                 align: "center",
                 render: ({ url, breakpoints }) => (
                   <Link
-                    to={`/review?url=${url}&breakpoints=${breakpoints.join(
-                      ","
-                    )}`}
+                    to={`/review?url=${url}&breakpoints=${Object.keys(
+                      breakpoints
+                    ).join(",")}`}
                   >
                     <Icon icon="arrow-forward" onClick={() => {}} />
                   </Link>
