@@ -22,7 +22,7 @@ function Review() {
   const { hash } = location
   const urlIndex = hash.indexOf("url=")
   const widthsIndex = hash.indexOf("breakpoints=")
-  const url = hash.slice(urlIndex + 4, widthsIndex - 1)
+  const url = decodeURIComponent(hash.slice(urlIndex + 4, widthsIndex - 1))
   const widths = hash
     .slice(widthsIndex + 12)
     .split(",")
